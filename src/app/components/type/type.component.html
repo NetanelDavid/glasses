@@ -1,0 +1,4 @@
+<h5>Select a lens type</h5>
+<div class="row">
+<div *ngFor='let type of types; let i=index' class="col-1" (click)='select(type)' routerLink='/numbers'>{{type}}</div>
+</div>

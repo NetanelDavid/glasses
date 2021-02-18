@@ -1,0 +1,11 @@
+<div *ngIf='glasse'>
+    <div>You have selected the frame:</div>
+    <img [src]="glasse.frame">
+    <div>And lens type:</div>
+    <div>{{glasse.type}}</div>
+    <div>In these numbers:</div>
+    <p>number to lens right:{{glasse.numbres[0]}}</p>
+    <p>number to lens left:{{glasse.numbres[1]}}</p>
+    <p>cr to lens right:{{glasse.numbres[2]}}</p>
+    <p>cr to lens left:{{glasse.numbres[3]}}</p>
+</div>

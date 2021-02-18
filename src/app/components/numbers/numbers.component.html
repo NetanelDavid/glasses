@@ -1,0 +1,15 @@
+
+
+    <div>Select a number in the right eye</div>
+    <input type="number" [(ngModel)]='nRight'>
+    <br>
+    <div>Select a number in the left eye</div>
+    <input type="number" [(ngModel)]='nLeft'>
+    <br>
+    <div>Select a cr in the right eye</div>
+    <input type="number" [(ngModel)]='cRight'>
+    <br>
+    <div>Select a cr in the left eye</div>
+    <input type="number" [(ngModel)]='cLeft'>
+    <br>
+    <button class="btn btn-primary "  routerLink='/summary' (click)='send()' [disabled]='!nRight||!nLeft||!cRight||!cLeft'>send</button>
