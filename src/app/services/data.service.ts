@@ -31,11 +31,8 @@ export class DataService {
   get(t:string):Observable<any>{
     switch(t){
      case 'frames':return of([...this.frames]); 
-       break;
      case 'type' :return of([...this.type]);
-       break;
      case 'glasse' :return of(this.glasse);
-       break;
     }
   }
 
